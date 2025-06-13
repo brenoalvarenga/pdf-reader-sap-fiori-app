@@ -1,0 +1,29 @@
+<mvc:View xmlns:core="sap.ui.core"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:macros="sap.fe.macros"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:u="sap.ui.unified"
+          controllerName="pdfreader.pdfreader.ext.main.Main">
+
+    <Page id="Main">
+        <content>
+            <FlexBox id="FlexBox"
+                width="100%"
+                height="100%"
+                direction="Column"
+                justifyContent="Center"
+                alignItems="Center">
+                <VBox id="VBox"
+                    justifyContent="Center"
+                    alignItems="Center">
+                    <u:FileUploader
+                        id="fileUploader"
+                        name="myFileUpload"
+                        width="300px"
+                        change="onChange"/>
+                </VBox>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

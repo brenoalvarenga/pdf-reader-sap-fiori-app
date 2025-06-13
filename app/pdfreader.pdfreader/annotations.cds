@@ -1,0 +1,1 @@
+using pdfreaderService as service from '../../srv/service';
